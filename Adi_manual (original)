@@ -6,7 +6,11 @@ Author:
 Juhee Cho, Donggyu Kim, Karl Rohe
 
 Description:
-An iterative matrix completion algorithm based on the thresholded SVD. It differentially and adaptively penalizes the singular values in each iteration. Although Adaptive-Impute employs multiple thresholding parameters updated every iteration, there is no tuning problem since it automatically finds specific values of the thresholding parameters which are theoretically-justified and data-dependent. For more details, please see “Intelligent Initialization and Adaptive Thresholding for Iterative Matrix Completion; Some Statistical and Algorithmic Theory for Adaptive-Impute”.
+An iterative matrix completion algorithm based on the thresholded SVD. It differentially and adaptively penalizes the singular values 
+in each iteration. Although Adaptive-Impute employs multiple thresholding parameters updated every iteration, there is no tuning problem 
+since it automatically finds specific values of the thresholding parameters which are theoretically-justified and data-dependent. 
+For more details, please see “Intelligent Initialization and Adaptive Thresholding for Iterative Matrix Completion; Some Statistical 
+and Algorithmic Theory for Adaptive-Impute”.
 
 Usage:
 adaptImpute(M.p, r=NULL, sparse=c(TRUE,FALSE), sign.choice = c("asympt","lm","greedy"),
