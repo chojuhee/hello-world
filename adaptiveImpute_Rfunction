@@ -125,8 +125,10 @@ adaptImpute = function(M.p,r=NULL,sparse=c(TRUE,FALSE),
      temp.M1=temp
      error=sum((temp.M1-temp.M)^2)/sum(temp.M^2)	
      temp.M=temp.M1
-     temp.M[temp.M>max.value]=max.value
-     temp.M[temp.M<min.value] = min.value
+     max.ind = temp.M>max.value
+     temp.M = temp.M*(1-max.ind) + max.value*max.ind
+     min.ind = temp.M<min.value
+     temp.M = temp.M*(1-min.ind) + min.value*min.ind
      itr=itr+1
 	if(itr%%10==0)cat(".")
      if(itr>itmax){break}
