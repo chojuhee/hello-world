@@ -6,7 +6,8 @@ Author:
 Karl Rohe and Juhee Cho
 
 Description:
-This is a faster version of Adaptive-Impute. This can be used when the bounds on the entries does not exist so that trunction on the entries are not necessary.
+This is a faster version of Adaptive-Impute. This can be used when the bounds on the entries does not exist 
+so that trunction on the entries are not necessary.
 
 Usage:
 fastAdi(M.p, r, tol=1e-07,itmax=200)
